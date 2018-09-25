@@ -1,13 +1,5 @@
 package com.weigan.loopview;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.ScheduledFuture;
-import java.util.concurrent.TimeUnit;
-
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
@@ -20,6 +12,14 @@ import android.util.AttributeSet;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Weidongjian on 2015/8/18.
@@ -194,14 +194,14 @@ public class LoopView extends View {
         paintOuterText = new Paint();
         paintOuterText.setColor(outerTextColor);
         paintOuterText.setAntiAlias(true);
-        paintOuterText.setTypeface(Typeface.MONOSPACE);
+        paintOuterText.setTypeface(Typeface.DEFAULT_BOLD);
         paintOuterText.setTextSize(textSize);
 
         paintCenterText = new Paint();
         paintCenterText.setColor(centerTextColor);
         paintCenterText.setAntiAlias(true);
         paintCenterText.setTextScaleX(scaleX);
-        paintCenterText.setTypeface(Typeface.MONOSPACE);
+        paintCenterText.setTypeface(Typeface.DEFAULT_BOLD);
         paintCenterText.setTextSize(textSize);
 
         paintIndicator = new Paint();
